@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-0": {
-            "RogerioLino\\Doctrine\\GeoJson": "src/RogerioLino/Doctrine/GeoJson"
+            "RogerioLino\\Doctrine\\GeoJson\\": "src/"
         }
     }
 }
