@@ -1,0 +1,22 @@
+{
+    "name": "rogeriolino/doctrine-geojson",
+    "description": "GeoJson Doctrine Models",
+    "keywords": ["geojson", "doctrine", "json"],
+    "authors": [
+        {
+            "name": "Rogerio Alencar Lino Filho", 
+            "email": "rogeriolino@gmail.com",
+            "homepage": "http://rogeriolino.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "doctrine/orm": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "RogerioLino\\Doctrine\\GeoJson": "src/RogerioLino/Doctrine/GeoJson"
+        }
+    }
+}
