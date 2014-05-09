@@ -1,7 +1,10 @@
 {
     "name": "rogeriolino/doctrine-geojson",
+    "type": "library",
     "description": "GeoJson Doctrine Models",
     "keywords": ["geojson", "doctrine", "gis", "json"],
+    "homepage": "http://www.rogeriolino.com",
+    "license": "MIT",
     "authors": [
         {
             "name": "Rogerio Alencar Lino Filho", 
