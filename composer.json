@@ -1,7 +1,7 @@
 {
     "name": "rogeriolino/doctrine-geojson",
     "description": "GeoJson Doctrine Models",
-    "keywords": ["geojson", "doctrine", "json"],
+    "keywords": ["geojson", "doctrine", "gis", "json"],
     "authors": [
         {
             "name": "Rogerio Alencar Lino Filho", 
