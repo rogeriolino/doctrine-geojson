@@ -17,7 +17,7 @@ GeoJson Doctrine Models
 ```php
   <?php
   
-  $feature = new Feature('Feature');
+  $feature = new Feature();
   $feature->add(new Property('name', 'Rogerio Lino'));
   $feature->setGeometry(
     (new Geometry('Point'))

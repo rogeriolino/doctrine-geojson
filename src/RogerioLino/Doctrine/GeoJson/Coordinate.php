@@ -47,8 +47,14 @@ class Coordinate implements \JsonSerializable
      * @var float
      */
     private $altitude = 0;
-
     
+    function __construct($latitude = 0, $longitude = 0, $altitude = 0) {
+        $this->latitude = $latitude;
+        $this->longitude = $longitude;
+        $this->altitude = $altitude;
+    }
+
+        
     public function getId() {
         return $this->id;
     }

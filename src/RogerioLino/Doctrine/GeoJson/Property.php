@@ -45,6 +45,10 @@ class Property implements \JsonSerializable
      */
     private $value;
     
+    function __construct($name, $value = null) {
+        $this->name = $name;
+        $this->value = $value;
+    }
     
     public function getId() {
         return $this->id;

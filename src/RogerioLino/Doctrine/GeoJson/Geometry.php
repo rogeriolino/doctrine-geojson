@@ -30,7 +30,8 @@ class Geometry extends GeoJson
      */
     private $coordinates;
     
-    public function __construct() {
+    public function __construct($type) {
+        parent::__construct($type);
         $this->coordinates = new ArrayCollection();
     }
 
@@ -54,6 +55,12 @@ class Geometry extends GeoJson
     public function setCoordinates($coordinates) 
     {
         $this->coordinates = $coordinates;
+    }
+    
+    public function add(Coordinate $coordinate) 
+    {
+        $coordinate->setGeometry($this);
+        $this->coordinates[] = $coordinate;
     }
     
     /**

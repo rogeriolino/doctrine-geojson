@@ -39,7 +39,7 @@ class Feature extends GeoJson
     
     
     public function __construct() {
-        $this->setType('Feature');
+        parent::__construct('Feature');
         $this->properties = new ArrayCollection();
     }
     
@@ -77,6 +77,12 @@ class Feature extends GeoJson
     public function setProperties($properties) 
     {
         $this->properties = $properties;
+    }
+
+    public function add(Property $property) 
+    {
+        $property->setFeature($this);
+        $this->properties[] = $property;
     }
 
     /**

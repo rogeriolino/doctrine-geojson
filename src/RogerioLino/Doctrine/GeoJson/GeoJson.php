@@ -22,6 +22,10 @@ abstract class GeoJson implements \JsonSerializable
      */
     private $type;
     
+    function __construct($type) {
+        $this->type = $type;
+    }
+    
     public function getType() 
     {
         return $this->type;
