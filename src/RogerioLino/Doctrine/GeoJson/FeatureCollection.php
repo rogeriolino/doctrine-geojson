@@ -51,11 +51,12 @@ class FeatureCollection extends GeoJson implements \Countable, \IteratorAggregat
      */
     public function jsonSerialize() 
     {
+        $features = array();
+        foreach ($this->features as $feature) {
+            $features[] = $feature->jsonSerialize();
+        }
         return array_merge(parent::jsonSerialize(),
-            array('features' => array_map(
-                function(Feature $feature) { return $feature->jsonSerialize(); },
-                $this->features
-            ))
+            array('features' => $features)
         );
     }
 
